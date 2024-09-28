@@ -27,6 +27,12 @@ function QuizContainer() {
     return () => clearTimeout(timer);
   }, [quizStarted, quizCompleted, timeRemaining]);
 
+  function decodeHTML(html) {
+    var txt = document.createElement('textarea');
+    txt.innerHTML = html;
+    return txt.value;
+  }
+
   const fetchQuestions = async (category, difficulty) => {
     setLoading(true);
     try {
@@ -38,9 +44,9 @@ function QuizContainer() {
       }
       const data = await response.json();
       const formattedQuestions = data.results.map((q) => ({
-        text: q.question,
-        options: [...q.incorrect_answers, q.correct_answer].sort(() => Math.random() - 0.5),
-        correctAnswer: q.correct_answer,
+        text: decodeHTML(q.question),
+        options: q.incorrect_answers.map(decodeHTML).concat(decodeHTML(q.correct_answer)).sort(() => Math.random() - 0.5),
+        correctAnswer: decodeHTML(q.correct_answer),
       }));
       setQuestions(formattedQuestions);
       setQuizStarted(true);
