@@ -16,7 +16,7 @@ function NavigationButtons({
       </button>
       <button
         onClick={onNextQuestion}
-        disabled={currentQuestionIndex === totalQuestions - 1}
+        disabled={currentQuestionIndex === totalQuestions - 1 && !onNextQuestion}
       >
         {currentQuestionIndex === totalQuestions - 1 ? 'Finish' : 'Next'}
       </button>
