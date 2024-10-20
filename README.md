@@ -1,5 +1,7 @@
 # React Quiz Application
 
+![image](https://github.com/user-attachments/assets/343e2c5f-67ae-475d-833d-53a92ad28f4a)
+
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Features](#features)
@@ -69,6 +71,9 @@ To run this project locally, follow these steps:
 4. Use the "Next" and "Previous" buttons to navigate through questions.
 5. After answering all questions, click "Finish" to see your score.
 6. Optionally, view correct answers and restart the quiz.
+
+![image](https://github.com/user-attachments/assets/96451f9e-ec7f-4045-aac3-b3aef70d2dba)
+
 
 ## Project Structure
 
