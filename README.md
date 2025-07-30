@@ -146,6 +146,6 @@ Aspiring Software Engineer | Data Science | Machine Learning
 
 📧 lamturehasan123@gmail.com
 
-🔗 LinkedIn - https://www.linkedin.com/in/hasanlamture/
+🎥 [LinkedIn](https://www.linkedin.com/in/hasanlamture/)
 
-💻 GitHub -https://github.com/hasanlamture7/hasanlamture7
+💻 [GitHub] (https://github.com/hasanlamture7/hasanlamture7)
