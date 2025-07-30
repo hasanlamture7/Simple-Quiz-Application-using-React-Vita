@@ -1,6 +1,8 @@
 # 🧠 React Quiz Application
 
-<img width="1253" height="887" alt="image" src="https://github.com/user-attachments/assets/37bdfaa3-31a9-4e03-93fd-70d591634f4e" />
+
+<img width="1138" height="846" alt="image" src="https://github.com/user-attachments/assets/92013504-659b-4861-9c0b-935af4929522" />
+
 
 ## 🧩 Introduction
 
