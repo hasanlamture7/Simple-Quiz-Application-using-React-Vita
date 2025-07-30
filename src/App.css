@@ -1,0 +1,81 @@
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 2px solid #e1e5e9;
+  border-radius: 10px;
+  background: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input[type="email"]:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+}
+
+.question-palette-container {
+  margin-top: 20px;
+}
+
+.palette-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 40px);
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.palette-button {
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.palette-button.answered {
+  background-color: green;
+  color: white;
+}
+
+.palette-button.notVisited {
+  background-color: lightgray;
+  color: black;
+}
+
+.palette-button.current {
+  background-color: red;
+  border: 2px solid darkred;
+  color: white;
+}
+
+.palette-legend {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.palette-legend .circle {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.circle.answered { background: green; }
+.circle.notVisited { background: lightgray; }
+.circle.current { background: red; }

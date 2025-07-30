@@ -5,7 +5,7 @@ import NavigationButtons from './NavigationButtons';
 import ScoreDisplay from './ScoreDisplay';
 import QuizSettings from './QuizSettings';
 import ProgressBar from './ProgressBar';
-
+import TotalQuestions from './TotalQuestions'
 function QuizContainer() {
   const [questions, setQuestions] = useState([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -37,7 +37,7 @@ function QuizContainer() {
     setLoading(true);
     try {
       const response = await fetch(
-        `https://opentdb.com/api.php?amount=10&category=${category}&difficulty=${difficulty}&type=multiple`
+        `https://opentdb.com/api.php?amount=15&category=${category}&difficulty=${difficulty}&type=multiple`
       );
       if (!response.ok) {
         throw new Error('Failed to fetch questions');
@@ -138,14 +138,17 @@ function QuizContainer() {
   }
 
   return (
+  <div className="quiz-wrapper">
     <div className="quiz-container">
       <ProgressBar current={currentQuestionIndex + 1} total={questions.length} />
       <div>Time remaining: {timeRemaining} seconds</div>
+      
       <Question
         question={questions[currentQuestionIndex]}
         selectedAnswer={userAnswers[currentQuestionIndex]}
         onAnswerSelect={handleAnswerSelect}
       />
+
       <NavigationButtons
         currentQuestionIndex={currentQuestionIndex}
         totalQuestions={questions.length}
@@ -153,7 +156,18 @@ function QuizContainer() {
         onPreviousQuestion={handlePreviousQuestion}
       />
     </div>
-  );
+
+    <TotalQuestions
+      questions={questions}
+      userAnswers={userAnswers}
+      currentIndex={currentQuestionIndex}
+      onJump={(index) => {
+        setCurrentQuestionIndex(index);
+        setTimeRemaining(30);
+      }}
+    />
+  </div>
+);
 }
 
 export default QuizContainer;

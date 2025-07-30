@@ -11,14 +11,32 @@ const difficulties = ['easy', 'medium', 'hard'];
 function QuizSettings({ onStartQuiz }) {
   const [category, setCategory] = React.useState('');
   const [difficulty, setDifficulty] = React.useState('');
+  const [email, setEmail] = React.useState('');
+
 
   const handleStart = () => {
     onStartQuiz(category, difficulty);
   };
 
   return (
+    
+
+
     <div className="quiz-settings">
       <h2>Quiz Settings</h2>
+    <div className="form-group">
+      <label htmlFor="email">Email Address:</label>
+      <input
+        type="email"
+        id="email"
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+        required
+        placeholder="you@example.com"
+      />
+    </div>
+    
+
       <select value={category} onChange={(e) => setCategory(e.target.value)}>
         <option value="">Select Category</option>
         {categories.map((cat) => (
@@ -37,6 +55,7 @@ function QuizSettings({ onStartQuiz }) {
       </select>
       <button onClick={handleStart}>Start Quiz</button>
     </div>
+    
   );
 }
 
