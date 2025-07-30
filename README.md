@@ -1,6 +1,7 @@
-# React Quiz Application
+# 🧠 React Quiz Application
 
-![image](https://github.com/user-attachments/assets/343e2c5f-67ae-475d-833d-53a92ad28f4a)
+<img width="1253" height="887" alt="image" src="https://github.com/user-attachments/assets/37bdfaa3-31a9-4e03-93fd-70d591634f4e" />
+
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -15,71 +16,70 @@
 10. [Future Enhancements](#future-enhancements)
 11. [Contributing](#contributing)
 12. [License](#license)
+13. [About Me](#about-me)
 
-## Introduction
+---
 
-This React Quiz Application is an interactive, web-based quiz game that allows users to test their knowledge across various categories and difficulty levels. Built with React and Vite, it offers a smooth, responsive user experience with features like timed questions, progress tracking, and score display.
+## 🧩 Introduction
 
-## Features
+This React Quiz Application is an interactive, web-based quiz game that allows users to test their knowledge across various categories and difficulty levels. Built with **React + Vite**, it provides a smooth and responsive user experience with features like timed questions, progress tracking, visual navigation, and score review.
 
-- Dynamic quiz generation based on user-selected category and difficulty
-- Timed questions with automatic progression
-- Progress bar to track quiz completion
-- Score calculation and display
-- Option to view correct answers after quiz completion
-- Ability to restart the quiz
-- Responsive design for various screen sizes
+---
 
-## Technologies Used
-
-- React 18.3.1
-- Vite (for project setup and build optimization)
-- OpenTrivia Database API (for quiz questions)
-- CSS3 for styling
-
-## Installation
-
-To run this project locally, follow these steps:
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/DonGuillotine/react-quiz-app.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd react-quiz-app
-   ```
-
-3. Install dependencies:
-   ```
-   npm install
-   ```
-
-4. Start the development server:
-   ```
-   npm run dev
-   ```
-
-5. Open your browser and visit `http://localhost:5173`
-
-## Usage
-
-1. Select a category and difficulty level from the quiz settings.
-2. Click "Start Quiz" to begin.
-3. Answer each question within the time limit.
-4. Use the "Next" and "Previous" buttons to navigate through questions.
-5. After answering all questions, click "Finish" to see your score.
-6. Optionally, view correct answers and restart the quiz.
-
-![image](https://github.com/user-attachments/assets/96451f9e-ec7f-4045-aac3-b3aef70d2dba)
+## 🚀 Features
+- ✅ Fetches real-time quiz questions (category + difficulty selection)
+- 🎯 15 Multiple-choice questions per quiz
+- ⏱️ 30-second countdown timer per question
+- 🔁 Navigation with Next/Previous buttons
+- 🧭 Interactive **Question Palette** to jump to any question
+- ✅ Tracks answered / not visited / current questions
+- 📊 Progress bar for quiz completion status
+- 🧮 Score display + review correct answers after quiz
+- 🔄 Option to restart the quiz
 
 
-## Project Structure
+## ⚙️ Technologies Used
 
-```
+- [React](https://react.dev)
+- [Vite](https://vitejs.dev)
+- [OpenTrivia DB API](https://opentdb.com/)
+- CSS3
+
+---
+
+## 🛠️ Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/hasanlamture7/react-quiz-app.git
+
+# Navigate into the project folder
+cd react-quiz-app
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+Visit: http://localhost:5173
+
+▶️ Usage
+Select quiz category and difficulty.
+
+Click Start Quiz.
+
+Answer each question within 30 seconds.
+
+Use Next/Previous or the question palette to navigate.
+
+Submit to view score and correct answers.
+
+Click Restart to try again.
+
+
+
+🗂️ Project Structure
 quiz-app/
-│
 ├── src/
 │   ├── components/
 │   │   ├── AnswerOptions.jsx
@@ -88,61 +88,82 @@ quiz-app/
 │   │   ├── Question.jsx
 │   │   ├── QuizContainer.jsx
 │   │   ├── QuizSettings.jsx
-│   │   └── ScoreDisplay.jsx
-│   │
+│   │   ├── ScoreDisplay.jsx
+│   │   └── TotalQuestion.jsx
 │   ├── styles/
 │   │   └── index.css
-│   │
 │   ├── App.jsx
 │   ├── main.jsx
 │   └── App.css
-│
 ├── index.html
 ├── package.json
 ├── vite.config.js
 └── README.md
-```
+🧩 Components
+QuizContainer – Main logic hub for quiz
 
-## Components
+QuizSettings – Category & difficulty selector
 
-- `QuizContainer`: Main component managing quiz state and logic
-- `QuizSettings`: Handles category and difficulty selection
-- `Question`: Displays current question and answer options
-- `AnswerOptions`: Renders selectable answer options
-- `NavigationButtons`: Provides navigation between questions
-- `ProgressBar`: Shows quiz progress
-- `ScoreDisplay`: Displays final score and correct answers
+Question – Renders question & options
 
-## API
+AnswerOptions – Interactive answer choices
 
-This application uses the Open Trivia Database API to fetch quiz questions. The API endpoint is:
+NavigationButtons – Navigate through quiz
 
-```
-https://opentdb.com/api.php
-```
+ProgressBar – Shows quiz progress
 
-Parameters used:
-- `amount`: Number of questions (default: 10)
-- `category`: Question category ID
-- `difficulty`: easy, medium, or hard
-- `type`: multiple (for multiple-choice questions)
+ScoreDisplay – Final score + review answers
 
-## Styling
+QuestionPalette – Color-coded jump-to-question UI
 
-The application uses CSS for styling, with styles defined in `App.css` and `index.css`. The layout is responsive and centered on the screen for optimal viewing on various devices.
+📡 API
+OpenTrivia API – https://opentdb.com/api.php
 
-## Future Enhancements
+Query Parameters:
 
-- User authentication and score tracking
-- Leaderboard functionality
-- More customization options (number of questions, time limit)
-- Additional question types (true/false, fill in the blank)
-- Accessibility improvements
+amount: Number of questions (e.g., 15)
 
-## Contributing
+category: Selected category ID
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+difficulty: easy, medium, or hard
 
-## License
+type: multiple
 
-This project is open source and available under the [MIT License](LICENSE).
+🎨 Styling
+Custom styling is handled via:
+
+App.css (global UI)
+
+index.css (reset/defaults)
+
+Component-level class-based styling
+
+Responsive layout designed for mobile, tablet, and desktop views.
+
+📈 Future Enhancements
+🔐 User login and score history
+
+🏆 Leaderboard and challenge friends
+
+📅 Custom quiz duration & question count
+
+♿ Accessibility (keyboard & screen-reader support)
+
+🧪 Unit tests with Jest & React Testing Library
+
+🤝 Contributing
+Contributions are welcome!
+If you find a bug or have a feature request, feel free to open an issue or submit a PR.
+
+📃 License
+This project is open source and licensed under the MIT License.
+
+👨‍💻 About Me
+Mahamadhasan Ibrahim Lamture
+Aspiring Software Engineer | Data Science | Machine Learning
+
+📧 lamturehasan123@gmail.com
+
+🔗 LinkedIn
+
+💻 GitHub
