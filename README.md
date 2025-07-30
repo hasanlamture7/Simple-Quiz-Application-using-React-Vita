@@ -143,6 +143,10 @@ This project is open source and licensed under the MIT License.
 
 
 
+## Preview
+
+🎥 [LinkedIn](https://www.linkedin.com/in/hasanlamture/) 
+💻 [GitHub] (https://github.com/hasanlamture7/hasanlamture7)
 
 
 
@@ -151,9 +155,9 @@ Mahamadhasan Ibrahim Lamture
 Aspiring Software Engineer | Data Science | Machine Learning
 📧 lamturehasan123@gmail.com
 
-🎥 [LinkedIn](https://www.linkedin.com/in/hasanlamture/)
 
-💻 [GitHub] (https://github.com/hasanlamture7/hasanlamture7)
+
+
 
 
 
