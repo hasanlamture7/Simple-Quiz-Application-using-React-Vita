@@ -2,24 +2,6 @@
 
 <img width="1253" height="887" alt="image" src="https://github.com/user-attachments/assets/37bdfaa3-31a9-4e03-93fd-70d591634f4e" />
 
-
-## Table of Contents
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [Project Structure](#project-structure)
-7. [Components](#components)
-8. [API](#api)
-9. [Styling](#styling)
-10. [Future Enhancements](#future-enhancements)
-11. [Contributing](#contributing)
-12. [License](#license)
-13. [About Me](#about-me)
-
----
-
 ## 🧩 Introduction
 
 This React Quiz Application is an interactive, web-based quiz game that allows users to test their knowledge across various categories and difficulty levels. Built with **React + Vite**, it provides a smooth and responsive user experience with features like timed questions, progress tracking, visual navigation, and score review.
@@ -164,6 +146,6 @@ Aspiring Software Engineer | Data Science | Machine Learning
 
 📧 lamturehasan123@gmail.com
 
-🔗 LinkedIn
+🔗 LinkedIn - https://www.linkedin.com/in/hasanlamture/
 
-💻 GitHub
+💻 GitHub -https://github.com/hasanlamture7/hasanlamture7
