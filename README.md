@@ -140,12 +140,22 @@ If you find a bug or have a feature request, feel free to open an issue or submi
 📃 License
 This project is open source and licensed under the MIT License.
 
+
+
+
+
+
+
 👨‍💻 About Me
 Mahamadhasan Ibrahim Lamture
 Aspiring Software Engineer | Data Science | Machine Learning
-
 📧 lamturehasan123@gmail.com
 
 🎥 [LinkedIn](https://www.linkedin.com/in/hasanlamture/)
 
 💻 [GitHub] (https://github.com/hasanlamture7/hasanlamture7)
+
+
+
+
+
