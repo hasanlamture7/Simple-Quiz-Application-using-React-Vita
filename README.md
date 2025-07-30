@@ -31,7 +31,7 @@ This React Quiz Application is an interactive, web-based quiz game that allows u
 
 ## 🛠️ Installation
 
-```bash
+```
 # Clone the repository
 git clone https://github.com/hasanlamture7/react-quiz-app.git
 
@@ -44,7 +44,7 @@ npm install
 # Start the development server
 npm run dev
 Visit: http://localhost:5173
-
+```
 ▶️ Usage
 Select quiz category and difficulty.
 
@@ -59,7 +59,7 @@ Submit to view score and correct answers.
 Click Restart to try again.
 
 
-
+```
 🗂️ Project Structure
 quiz-app/
 ├── src/
@@ -81,6 +81,8 @@ quiz-app/
 ├── package.json
 ├── vite.config.js
 └── README.md
+
+```
 🧩 Components
 QuizContainer – Main logic hub for quiz
 
@@ -121,7 +123,8 @@ index.css (reset/defaults)
 Component-level class-based styling
 
 Responsive layout designed for mobile, tablet, and desktop views.
-
+'''
+---
 📈 Future Enhancements
 🔐 User login and score history
 
@@ -137,22 +140,26 @@ Responsive layout designed for mobile, tablet, and desktop views.
 Contributions are welcome!
 If you find a bug or have a feature request, feel free to open an issue or submit a PR.
 
+---
+
 📃 License
 This project is open source and licensed under the MIT License.
 
 
-
+---
 
 ## Preview
 
 🎥 [LinkedIn](https://www.linkedin.com/in/hasanlamture/) 
-💻 [GitHub] (https://github.com/hasanlamture7/hasanlamture7)
+💻 [GitHub](https://github.com/hasanlamture7/hasanlamture7)
 
-
+---
 
 👨‍💻 About Me
 Mahamadhasan Ibrahim Lamture
+
 Aspiring Software Engineer | Data Science | Machine Learning
+
 📧 lamturehasan123@gmail.com
 
 
